@@ -10,5 +10,5 @@ which to some extent satisfies the requirements of optimal control and adaptive 
 Run [run_0.py](https://github.com/wwsyan/ControlCollection/blob/main/AC_RBF_feedback_control/run_0.py) to see dynamics while u = y_d.
 
 Run [run_1.py](https://github.com/wwsyan/ControlCollection/blob/main/AC_RBF_feedback_control/run_1.py) to see dynamics while u = actor output.
-<img src="AC_RBF_feedback_control/img/actor_input.png" width="100%" height="100%">
+<img src="AC_RBF_feedback_control/img/actor_input.png" width="80%" height="80%">
 
