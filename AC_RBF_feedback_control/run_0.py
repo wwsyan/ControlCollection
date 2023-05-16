@@ -15,13 +15,15 @@ for k in range(K1,K2):
 
 
 # 控制信号为参考信号的系统动态
-xr = np.zeros((K2, 2))
-xr[0] = [0, 0.3]
+x = np.zeros((K2, 2))
+x[0] = [0, 0.3]
 for k in range(K2-1):
-    xr[k+1, 0] = 0.2 * np.square(xr[k, 0]) * xr[k, 1] / (1 + np.square(xr[k, 0])) + 0.5 * xr[k, 1]
-    xr[k+1, 1] = xr[k, 0] / (1 + np.square(xr[k, 0]) + np.square(xr[k, 1])) + y_d[k] + 0.05*np.cos(0.01*k)*np.cos(xr[k, 0])
-
-y = xr[:, 1]
+    x[k+1, 0] = 0.2 * np.square(x[k, 0]) * x[k, 1] / (1 + np.square(x[k, 0])) + 0.5 * x[k, 1]
+    x[k+1, 1] = x[k, 0] / (1 + np.square(x[k, 0]) + np.square(x[k, 1])) \
+                + y_d[k] \
+                + 0.2*np.sin(y_d[k]) \
+                + 0.05*np.cos(0.01*k)*np.cos(x[k, 0])
+y = x[:, 1]
 e = y - y_d
 
 # 画图
@@ -31,9 +33,9 @@ fig.set_size_inches(20, 15)
 axs[0].plot(y_d)
 axs[0].set_title("y_d")
 
-axs[1].plot(xr)
+axs[1].plot(x)
 axs[1].set_title("States")
-axs[1].legend(["x1", "x2 = y"])
+axs[1].legend(["x1 = y", "x2"])
 
 axs[2].plot(e)
 axs[2].set_title("y - y_d")
