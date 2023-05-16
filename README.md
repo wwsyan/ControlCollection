@@ -17,7 +17,7 @@ Run [run_0.py](https://github.com/wwsyan/ControlCollection/blob/main/AC_RBF_feed
 
 Run [run_1.py](https://github.com/wwsyan/ControlCollection/blob/main/AC_RBF_feedback_control/run_1.py) to see dynamics while u = actor output.
 <details>
-<summary>Result: tracking well!!</summary>
+<summary>Result: tracking well</summary>
 <img src="AC_RBF_feedback_control/img/actor_input.png" width="100%" height="100%">
 </details>
 
