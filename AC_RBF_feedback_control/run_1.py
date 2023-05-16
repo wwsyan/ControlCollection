@@ -43,8 +43,7 @@ for k in range(K2-1):
                 + u_k \
                 + 0.2*np.sin(u_k) \
                 + 0.05*np.cos(0.01*k)*np.cos(x[k, 0])
-    
-    
+     
 y = x[:, 1]
 e = y - y_d
 
