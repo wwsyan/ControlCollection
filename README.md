@@ -1,4 +1,4 @@
-# ControlCollection
+# ControlStore
 Collect and apply interesting control methods!!
 
 ### 🚀 Reinforcement Learning Output Feedback NN Control
