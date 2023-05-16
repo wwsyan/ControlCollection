@@ -26,7 +26,7 @@ class Actor():
                 self.Center[k] = [i, j]
                 k += 1
         self.Alpha_0 = 7 # 跟随误差增益
-        self.Alpha_a = 0.01 # critic学习率
+        self.Alpha_a = 0.01 # actor学习率
         self.Alpha = 0.515 # 衰减系数
         self.N = 4 # return函数考虑的未来步长
         
