@@ -2,6 +2,8 @@
 Collect and apply interesting control methods!!
 
 ### 🚀 Reinforcement Learning Output Feedback NN Control
+*Keywords: approximate dynamic programming, discrete-time system, output feedback control, Actor-Critic, RBF NN*
+
 [Paper](https://github.com/wwsyan/ControlCollection/blob/main/AC_RBF_feedback_control/binxu2014.pdf), 
 [Repro](https://github.com/wwsyan/ControlCollection/tree/main/AC_RBF_feedback_control).
 This work applies the common structure of Actor Critic network in Reinforcement Learning to feedback control, 
